@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charSet="utf-8"/>
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta property="fc:frame" content="vNext" />
+    <meta property="fc:frame:video" content="https://cdn.dragon.cere.network/1/sony_4k_60_fps.mp4">
+    <meta property="fc:frame:video:type" content="video/mp4">
+    <meta property="fc:frame:image" content="https://www.w3schools.com/images/compatible_safari.png">
+    <meta property="og:image" content="https://www.w3schools.com/images/compatible_safari.png">
 </head>
 <body>
-    <video controls width="1920" height="1080">
-    	<source src="https://cdn.dragon.cere.network/1/sony_4k_60_fps.mp4" type="video/mp4">
-    </video>
+    <video id="my-video" class="video-js" controls preload="auto" width="1980" height="1080" poster="MY_VIDEO_POSTER.jpg"
+    data-setup="{}">
+    <source src="https://cdn.dragon.cere.network/1/sony_4k_60_fps.mp4" type="video/mp4" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+  </video>
+
+  <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
 </body>
 </html>
