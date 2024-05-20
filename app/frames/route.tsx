@@ -14,6 +14,7 @@ const frameHandler = frames(async (ctx) => {
     image: (
       <div tw="flex flex-col">
         <div tw="flex">frames.js starter</div>
+        <video src="https://storage.testnet.cere.network/123522/ddc-playground/file_example_MP4_640_3MG.mp4"></video>
         {ctx.message?.inputText && (
           <div tw="flex">{`Input: ${ctx.message.inputText}`}</div>
         )}
